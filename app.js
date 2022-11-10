@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const PORT = 3306;
+const PORT = 8005 ;
 
 app.set('view engine', 'ejs');
 app.use('/views', express.static(__dirname + '/views'));
@@ -18,5 +18,5 @@ app.get('*', (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Port Number is ${PORT}!!`);
+  console.log(`Port Number is ${PORT}`);
 });
